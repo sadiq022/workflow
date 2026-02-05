@@ -215,7 +215,7 @@ def rerank_hits_for_how_question(hits):
     return [h for h, _ in scored]
 
 
-def rag_search(query, top_k=5):
+def rag_search(query, mode, top_k=5):
     store = MilvusStore(
         uri=os.path.join(MILVUS_DIR, "milvus.db"),
         collection_name=COLLECTION_NAME,
@@ -271,7 +271,7 @@ def rag_search(query, top_k=5):
         }
 
     # LLM answer (context-grounded)
-    answer = call_llm(query, context)
+    answer = call_llm(query, context, mode)
 
     # Confidence from anchor scores only
     print("Anchor scores:", anchor_scores)
@@ -294,9 +294,11 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--query", required=True)
+    parser.add_argument("--mode", required=True)
     args = parser.parse_args()
 
-    result = rag_search(args.query)
+    # result = rag_search(args.query)
+    result = rag_search(query=args.query, mode=args.mode)
 
     print("\nAnswer:\n")
     print(result["answer"])
