@@ -73,8 +73,10 @@ STRICT RULES
   - Explicitly state what is not explained.
 
 7. FAILURE MODE (MANDATORY)
-- If the context is insufficient to answer the question, respond EXACTLY with:
-  “The provided documents do not fully explain this.”
+If the context partially explains the question:
+- Explain what IS covered.
+- Explicitly state what is NOT covered.
+- Do NOT fill gaps.
 """
 
 
@@ -143,8 +145,10 @@ STRICT RULES
 - Do NOT fill gaps.
 
 5. FAILURE MODE (MANDATORY)
-- If the context does not fully answer the question, respond EXACTLY with:
-  “The provided documents do not fully explain this.”
+If the context partially explains the question:
+- Explain what IS covered.
+- Explicitly state what is NOT covered.
+- Do NOT fill gaps.
 """
 
 LLM_ONLY_SYSTEM = """

@@ -5,22 +5,21 @@ from llm import call_llm
 
 def answer_question(query, mode):
     if not query.strip():
-        return "Please enter a question.", "", ""
+        return "Please enter a question.", ""
 
     if mode == "llm_only":
         answer = call_llm(question=query, context="", mode=mode)
-        return answer, "", "LLM knowledge only"
+        return answer, "LLM knowledge only"
 
     result = rag_search(query, mode)
 
     answer = result["answer"]
-    confidence = f"{result['confidence']:.2f}"
     references = "\n".join(
         f"{pdf}, page {page}"
         for pdf, page in result["references"]
     )
 
-    return answer, confidence, references
+    return answer, references
 
 
 with gr.Blocks(title="PDF RAG Assistant") as demo:
@@ -40,7 +39,7 @@ with gr.Blocks(title="PDF RAG Assistant") as demo:
 
     mode = gr.Radio(
         choices=[
-            ("RAG (documents only)", "rag"),
+            ("Documents only", "rag"),
             ("LLM only (no documents)", "llm_only"),
             ("Hybrid (documents + LLM)", "hybrid"),
         ],
@@ -59,12 +58,6 @@ with gr.Blocks(title="PDF RAG Assistant") as demo:
         interactive=False,
     )
 
-    confidence = gr.Textbox(
-        label="Confidence",
-        interactive=False,
-        placeholder="Not available for LLM-only mode",
-    )
-
     references = gr.Textbox(
         label="References",
         lines=6,
@@ -74,7 +67,7 @@ with gr.Blocks(title="PDF RAG Assistant") as demo:
     ask_btn.click(
         fn=answer_question,
         inputs=[query, mode],
-        outputs=[answer, confidence, references],
+        outputs=[answer, references],
     )
 
 
