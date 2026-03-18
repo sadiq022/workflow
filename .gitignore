@@ -7,6 +7,7 @@ env.bak/
 venv.bak/
 
 /.env
+.env
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -16,4 +17,4 @@ __pycache__/
 pdfs/
 rolls_royce/
 data_backup/
-milvus_data/
+milvus_data/.env
