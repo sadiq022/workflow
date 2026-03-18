@@ -10,3 +10,8 @@ venv.bak/
 __pycache__/
 *.py[cod]
 *$py.class
+
+pdfs/
+rolls_royce/
+data_backup/
+milvus_data/

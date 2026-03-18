@@ -1,6 +1,12 @@
 import os
 import shutil
 
+# Set gRPC keepalive settings to prevent "too_many_pings" errors
+os.environ['GRPC_KEEPALIVE_TIME_MS'] = '30000'        # Send pings every 30 seconds
+os.environ['GRPC_KEEPALIVE_TIMEOUT_MS'] = '10000'     # Wait 10 seconds for response
+os.environ['GRPC_KEEPALIVE_PERMIT_WITHOUT_CALLS'] = 'true'  # Allow pings without active calls
+os.environ['GRPC_HTTP2_MIN_TIME_BETWEEN_PINGS_MS'] = '30000'  # Minimum 30s between pings
+
 from config import *
 from pdf_loader import load_pdfs
 from chunker import chunk_documents

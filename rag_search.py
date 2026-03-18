@@ -5,7 +5,7 @@ from milvus_store import MilvusStore
 from llm import call_llm
 
 
-model = SentenceTransformer(EMBEDDING_MODEL)
+model = SentenceTransformer(EMBEDDING_MODEL, device="cpu")
 
 def generate_search_queries(query: str):
     """

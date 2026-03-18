@@ -1,3 +1,11 @@
+import os
+
+# Set gRPC keepalive settings to prevent "too_many_pings" errors
+os.environ['GRPC_KEEPALIVE_TIME_MS'] = '30000'        # Send pings every 30 seconds
+os.environ['GRPC_KEEPALIVE_TIMEOUT_MS'] = '10000'     # Wait 10 seconds for response
+os.environ['GRPC_KEEPALIVE_PERMIT_WITHOUT_CALLS'] = 'true'  # Allow pings without active calls
+os.environ['GRPC_HTTP2_MIN_TIME_BETWEEN_PINGS_MS'] = '30000'  # Minimum 30s between pings
+
 import gradio as gr
 from rag_search import rag_search
 from llm import call_llm
@@ -22,8 +30,8 @@ def answer_question(query, mode):
     return answer, references
 
 
-with gr.Blocks(title="PDF RAG Assistant") as demo:
-    gr.Markdown("## 📄 PDF RAG Assistant")
+with gr.Blocks(title="Document Assistant") as demo:
+    gr.Markdown("## Document Assistant")
     gr.Markdown(
         "Test RAG, Hybrid, and LLM-only question answering."
     )

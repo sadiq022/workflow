@@ -1,7 +1,5 @@
 from pymilvus import MilvusClient, Collection, connections
 
-
-
 class MilvusStore:
     def __init__(self, uri, collection_name, dim):
         self.client = MilvusClient(uri)
