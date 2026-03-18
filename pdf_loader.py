@@ -79,6 +79,127 @@ def extract_document_identifier(metadata: dict) -> str:
             return match.group(1).strip()
     
     return 'UNKNOWN'
+
+
+def parse_filename_for_document_number(filename: str) -> dict:
+    """
+    Extract document number, revision, and title from filename.
+    Gracefully handles all PDF types - returns 'Unknown' for unmatchable patterns.
+    Handles filenames with spaces or plus signs (e.g., "RRES 90008" or "RRES+90008").
+    All document numbers are normalized to UPPERCASE for consistent filtering.
+    PRIORITIZES: CSS, RRES, RRP patterns (aerospace documents)
+    """
+    name_without_ext = filename.rsplit('.', 1)[0] if filename.endswith('.pdf') else filename
+    
+    # Replace plus signs with spaces for consistent parsing
+    normalized_name = name_without_ext.replace('+', ' ')
+    
+    # Look specifically for CSS, RRES, RRP patterns first (most reliable)
+    # Avoids matching random text like month names or other dates
+    aerospace_pattern = r'\b((?:CSS|RRES|RRP)\s+\d+[\w\-]*)\b'
+    doc_match = re.search(aerospace_pattern, normalized_name, re.IGNORECASE)
+    
+    if doc_match:
+        document_number = doc_match.group(1).strip().upper()
+        
+        # Try to find revision (Issue, Version, Rev, etc.)
+        rev_pattern = r'(Issue|Version|Rev|v)\s+([A-Za-z0-9\-]+)'
+        rev_match = re.search(rev_pattern, normalized_name, re.IGNORECASE)
+        revision = rev_match.group(0).strip() if rev_match else 'Unknown'
+        
+        # Extract title (text after document number and revision)
+        title_pattern = f'{re.escape(document_number)}\s+(?:{re.escape(revision)})?\s*-?\s*(.*)'
+        title_match = re.search(title_pattern, normalized_name, re.IGNORECASE)
+        title = title_match.group(1).strip() if title_match and title_match.group(1) else ''
+        
+        return {
+            'document_number': document_number,
+            'revision': revision,
+            'document_title': title,
+            'source': 'filename'
+        }
+    
+    # No document number found - return defaults
+    return {
+        'document_number': 'Unknown',
+        'revision': 'Unknown',
+        'document_title': name_without_ext,
+        'source': 'none'
+    }
+
+
+def extract_document_number_from_pdf_header(pdf_metadata: dict) -> dict:
+    """
+    Extract document number, revision, and title from PDF header/metadata.
+    This is more reliable than filename-based extraction.
+    
+    Returns dict with keys: document_number, revision, document_title
+    All document numbers are normalized to UPPERCASE for consistent filtering.
+    """
+    # This is the preferred extraction method - from actual PDF content
+    
+    # Try first line of PDF (usually contains document number)
+    first_line = pdf_metadata.get('first_line', '').strip()
+    
+    # Try page header (top 15% of first page)
+    page_header = pdf_metadata.get('page_header', '').strip()
+    
+    # Try document_id field (first 5 lines)
+    document_id = pdf_metadata.get('document_id', '').strip()
+    
+    # Combine sources, prioritize first_line
+    sources_to_check = [first_line, page_header, document_id]
+    
+    for source_text in sources_to_check:
+        if not source_text:
+            continue
+        
+        # Look specifically for CSS, RRES, RRP patterns first (most important for aerospace docs)
+        # These are more explicit and avoid matching dates like "AUGUST 2023"
+        aerospace_pattern = r'\b((?:CSS|RRES|RRP)\s+\d+[\w\-]*)\b'
+        aerospace_match = re.search(aerospace_pattern, source_text, re.IGNORECASE)
+        
+        if aerospace_match:
+            document_number = aerospace_match.group(1).strip().upper()
+            
+            # Try to find revision (Issue, Version, Rev, etc.)
+            # Look in the same source text
+            rev_pattern = r'(Issue|Version|Rev|v)\s+([A-Za-z0-9\-]+)'
+            rev_match = re.search(rev_pattern, source_text, re.IGNORECASE)
+            revision = rev_match.group(0).strip() if rev_match else 'Unknown'
+            
+            # Extract title (text after document number and revision)
+            # Look for title after the document number in source text
+            title_pattern = f'{re.escape(document_number)}[^-]*(?:{re.escape(revision)})?[^-]*-?\s*(.*)'
+            title_match = re.search(title_pattern, source_text, re.IGNORECASE)
+            title = title_match.group(1).strip() if title_match and title_match.group(1) else ''
+            
+            return {
+                'document_number': document_number,
+                'revision': revision,
+                'document_title': title,
+                'source': 'pdf_header'
+            }
+    
+    # No document number found in PDF header - return defaults
+    return {
+        'document_number': 'Unknown',
+        'revision': 'Unknown',
+        'document_title': '',
+        'source': 'none'
+    }
+
+
+def load_pdfs(pdf_dir):
+    """
+    Load all PDFs from a directory and extract text with metadata.
+    
+    Args:
+        pdf_dir: Directory path containing PDF files
+        
+    Returns:
+        List of documents with keys: pdf_name, page_number, text, metadata
+    """
     documents = []
 
     for file in os.listdir(pdf_dir):
@@ -86,18 +207,40 @@ def extract_document_identifier(metadata: dict) -> str:
             continue
 
         path = os.path.join(pdf_dir, file)
-        with pdfplumber.open(path) as pdf:
-            # Extract metadata once per PDF
-            pdf_metadata = extract_pdf_metadata(pdf)
-            
-            for page_num, page in enumerate(pdf.pages, start=1):
-                text = page.extract_text()
-                if text:
-                    documents.append({
-                        "pdf_name": file,
-                        "page_number": page_num,
-                        "text": text,
-                        "metadata": pdf_metadata  # Store metadata with each page
-                    })
+        try:
+            with pdfplumber.open(path) as pdf:
+                # Extract metadata once per PDF
+                pdf_metadata = extract_pdf_metadata(pdf)
+                
+                # 🔑 TWO-STEP APPROACH: Filename first (more structured), then PDF header
+                filename_info = parse_filename_for_document_number(file)
+                
+                # If filename has a clear CSS/RRES/RRP pattern, use it (it's more reliable)
+                if filename_info['document_number'] != 'Unknown':
+                    doc_info = filename_info
+                    doc_info['source'] = 'filename'
+                else:
+                    # Try PDF header extraction as fallback
+                    doc_info = extract_document_number_from_pdf_header(pdf_metadata)
+                    
+                    # If PDF header found something, enhance it with filename title if needed
+                    if doc_info['source'] == 'pdf_header' and not doc_info['document_title']:
+                        doc_info['document_title'] = filename_info['document_title']
+                
+                for page_num, page in enumerate(pdf.pages, start=1):
+                    text = page.extract_text()
+                    if text:
+                        documents.append({
+                            "pdf_name": file,
+                            "page_number": page_num,
+                            "text": text,
+                            "metadata": pdf_metadata,
+                            "document_number": doc_info['document_number'],
+                            "revision": doc_info['revision'],
+                            "document_title": doc_info['document_title']
+                        })
+        except Exception as e:
+            print(f"Warning: Failed to load {file}: {e}")
+            continue
 
     return documents

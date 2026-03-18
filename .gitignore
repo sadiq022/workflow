@@ -18,3 +18,4 @@ pdfs/
 rolls_royce/
 data_backup/
 milvus_data/.env
+milvus_data/

@@ -1,4 +1,5 @@
 import os
+import re
 from sentence_transformers import SentenceTransformer
 from config import *
 from milvus_store import MilvusStore
@@ -127,6 +128,39 @@ def detect_query_type(query: str) -> str:
     return "general"
 
 
+def detect_document_number_query(query: str) -> str:
+    """
+    Detect if query mentions a specific document number (RRES, CSS, RRP, etc).
+    Case-insensitive matching. Returns document number normalized to UPPERCASE.
+    
+    Examples:
+        "RRES 90027 Issue D" -> "RRES 90027"
+        "css 12" -> "CSS 12"
+        "What is torque tightening" -> None
+    """
+    # Pattern: 2-5 letters + digits, optionally followed by Issue/Version/Rev
+    # Case-insensitive match, normalize result to uppercase
+    pattern = r'([A-Za-z]{2,5}\s+\d+[\w\-]*)'
+    match = re.search(pattern, query, re.IGNORECASE)
+    
+    if match:
+        return match.group(1).strip().upper()
+    return None
+
+
+def fuzzy_document_number_query(query: str):
+    """
+    Fuzzy match document numbers in query.
+    Returns a list of possible document numbers (CSS/RRES/RRP + number) found in the query.
+    Matches both 'CSS 200' and 'CSS200' patterns.
+    """
+    # Find all patterns like CSS 177, CSS177, RRES 90008, RRES90008, etc.
+    pattern = r'((?:CSS|RRES|RRP)[\s-]?\d{2,6})'
+    matches = re.findall(pattern, query, re.IGNORECASE)
+    # Normalize: remove spaces and dashes, uppercase
+    return [re.sub(r'[^A-Za-z0-9]', '', m).upper() for m in matches]
+
+
 def build_context(
     hits,
     store,
@@ -216,28 +250,46 @@ def rerank_hits_for_how_question(hits):
 
 
 def rag_search(query, mode, top_k=5):
+    from config import MILVUS_URI
     store = MilvusStore(
-        uri=os.path.join(MILVUS_DIR, "milvus.db"),
+        uri=MILVUS_URI,
         collection_name=COLLECTION_NAME,
         dim=EMBEDDING_DIM,
     )
 
-    # Encode query
-    # query_vector = model.encode(query, normalize_embeddings=True).tolist()
+    # 🔑 Fuzzy document number matching
+    fuzzy_doc_numbers = fuzzy_document_number_query(query)
 
-    # # Vector search
-    # results = store.search(query_vector, top_k)
-    # hits = results[0]
-
-    # 🔑 Generate multiple retrieval queries
+    # Generate multiple retrieval queries
     search_queries = generate_search_queries(query)
 
     all_hits = []
 
     for q in search_queries:
         q_vector = model.encode(q, normalize_embeddings=True).tolist()
-        results = store.search(q_vector, top_k)
-        all_hits.extend(results[0])
+        if fuzzy_doc_numbers:
+            # Fetch all chunks and filter in Python for robust fuzzy matching
+            all_chunks = store.fetch_all_chunks()
+            filtered_chunks = []
+            for chunk in all_chunks:
+                doc_num = chunk.get('document_number', '')
+                doc_num_normalized = re.sub(r'[^A-Za-z0-9]', '', doc_num).upper()
+                if any(fuzzy in doc_num_normalized for fuzzy in fuzzy_doc_numbers):
+                    filtered_chunks.append(chunk)
+            # If no matches, fallback to normal search
+            if not filtered_chunks:
+                results = store.search(q_vector, top_k)
+                all_hits.extend(results[0] if results else [])
+            else:
+                # Build fake hit objects for reranking/context
+                class FakeHit:
+                    def __init__(self, entity):
+                        self.entity = entity
+                        self.score = 1.0  # max score for filtered
+                all_hits.extend([FakeHit(chunk) for chunk in filtered_chunks])
+        else:
+            results = store.search(q_vector, top_k)
+            all_hits.extend(results[0] if results else [])
 
     unique_hits = {}
     for h in all_hits:
@@ -251,10 +303,8 @@ def rag_search(query, mode, top_k=5):
 
     hits = list(unique_hits.values())
 
-    # 🔑 RERANK FIRST (before context building)
     hits = rerank_hits_for_how_question(hits)
 
-    # 🔑 Build expanded context
     context, references, anchor_scores = build_context(
         hits=hits,
         store=store,
@@ -270,10 +320,8 @@ def rag_search(query, mode, top_k=5):
             "references": [],
         }
 
-    # LLM answer (context-grounded)
     answer = call_llm(query, context, mode)
 
-    # Confidence from anchor scores only
     print("Anchor scores:", anchor_scores)
     confidence = (
         sum(anchor_scores) / len(anchor_scores)

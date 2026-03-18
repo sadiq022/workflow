@@ -190,13 +190,13 @@ Answer:
 """
 
     return _client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt},
         ],
         temperature=0.1,
-        max_completion_tokens=700,
+        max_completion_tokens=1500,
     ).choices[0].message.content.strip()
 
 
@@ -220,7 +220,7 @@ Question:
 """
 
     resp = _client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="meta-llama/llama-4-scout-17b-16e-instruct",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
         max_completion_tokens=256,

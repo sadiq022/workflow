@@ -88,8 +88,9 @@ def process_uploaded_pdfs(uploaded_files: List[str]) -> Tuple[bool, str]:
         # Insert into Milvus WITHOUT resetting the database
         # This appends to existing data instead of replacing it
         print("Merging into database...")
+        from config import MILVUS_URI
         store = MilvusStore(
-            uri=os.path.join(MILVUS_DIR, "milvus.db"),
+            uri=MILVUS_URI,
             collection_name=COLLECTION_NAME,
             dim=EMBEDDING_DIM
         )
@@ -114,8 +115,9 @@ def process_uploaded_pdfs(uploaded_files: List[str]) -> Tuple[bool, str]:
 def get_upload_status() -> str:
     """Get information about the current database status."""
     try:
+        from config import MILVUS_URI
         store = MilvusStore(
-            uri=os.path.join(MILVUS_DIR, "milvus.db"),
+            uri=MILVUS_URI,
             collection_name=COLLECTION_NAME,
             dim=EMBEDDING_DIM
         )

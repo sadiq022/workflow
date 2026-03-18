@@ -57,15 +57,16 @@ def run(input_pdf_dir):
         })
 
     print("Storing in Milvus")
+    from config import MILVUS_URI
     store = MilvusStore(
-        uri=os.path.join(MILVUS_DIR, "milvus.db"),
+        uri=MILVUS_URI,
         collection_name=COLLECTION_NAME,
         dim=EMBEDDING_DIM
     )
 
     store.reset_collection()
     store.insert(records)
-    # store.create_index()
+    store.load_collection()  # Load collection for faster queries
 
     print("Pipeline completed successfully")
 
