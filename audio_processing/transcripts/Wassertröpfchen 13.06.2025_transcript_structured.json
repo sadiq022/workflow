@@ -1,0 +1,64 @@
+Here is the extracted structured meeting information in valid JSON:
+
+```json
+{
+  "meeting_title": "Wassertropfchen Treffen",
+  "date": "13.6.",
+  "leader": "",
+  "participants": "",
+  "goal": "",
+  "topics": [
+    {
+      "title": "Betriebswirtschaftliche Daten und Controlling",
+      "key_points": [
+        "BA-Report erstellt von Herrn Merz",
+        "Qualität des Reports ist hervorragend",
+        "Umsetzung von Kennzahlen und Liebenmanagement"
+      ],
+      "observations": [
+        "Umsatzabweichung von 320.000 Euro hinter dem Plan",
+        "Hauptabweichungen bei HP 013, LP-1-2-0 und Zielringen"
+      ],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Budget- und Budget-Verantwortungen",
+      "key_points": [
+        "Einführung von Ampelsystem und Budget-Überschreitungen",
+        "Budget-Überschreitung von 41.000 Euro im April",
+        "Optimierung auf 25.000 Euro im Mai"
+      ],
+      "observations": [
+        "Budget-Überschreitungen und deren Optimierung"
+      ],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Syringe und angefertigte Bauteile",
+      "key_points": [
+        "Diskussion über Syringe und angefertigte Bauteile",
+        "Erweiterung der angefertigten Bauteile um 98.000 Euro"
+      ],
+      "observations": [
+        "Ursachen für die Erweiterung der angefertigten Bauteile"
+      ],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Durchlaufzeiten und Ampelbild",
+      "key_points": [
+        "Darstellung von Durchlaufzeiten und Ampelbild",
+        "Möglichkeit, gezielt an Baustellen zu arbeiten"
+      ],
+      "observations": [
+        "Status quo der Durchlaufzeiten und Ampelbild"
+      ],
+      "decisions": [],
+      "actions": []
+    }
+  ]
+}
+```

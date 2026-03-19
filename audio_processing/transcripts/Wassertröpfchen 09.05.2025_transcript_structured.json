@@ -1,0 +1,60 @@
+```
+{
+  "meeting_title": "BP-Monatsreport-Treffen",
+  "date": "",
+  "leader": "",
+  "participants": "",
+  "goal": "Zielrichtung ist heute, dass wir definitiv nur die fünf Minuten brauchen und nicht mehr als Zielrichtung. Wassertröpfchen für diese Woche.",
+  "topics": [
+    {
+      "title": "Bereich BP-Projekte",
+      "key_points": [
+        "Der Bereich BP-Projekte soll weiterentwickelt werden",
+        "Es gibt bereits einen guten Standard für Regelprozesse im Bereich Cap"
+      ],
+      "observations": [
+        "Die Kommunikation und Fertigungsplanung laufen sehr gut",
+        "Die Kundenzufriedenheit ist hoch"
+      ],
+      "decisions": [
+        "Der Fokus wird auf der Interaktion mit den BP-Projektvorgängen liegen"
+      ],
+      "actions": [
+        "Die Vernetzung zwischen den BP-Prozessen und den CAP-Prozessen soll weiterentwickelt werden"
+      ]
+    },
+    {
+      "title": "Effizienzsteigerung",
+      "key_points": [
+        "Die Effizienzsteigerung soll weiter vorangetrieben werden",
+        "Das Team soll die Top 3 Qualitätsthemen und den Top 4 Schulungsthemen weiterentwickeln"
+      ],
+      "observations": [
+        "Die Formate, die verwendet werden, sollen identisch sein"
+      ],
+      "decisions": [
+        "Die mittelfristige Forecastplanung soll vereinheitlicht werden"
+      ],
+      "actions": [
+        "Die Protokolle sollen gelesen und als Feedback verwendet werden"
+      ]
+    },
+    {
+      "title": "Protokolle und Teamtreffen",
+      "key_points": [
+        "Die Protokolle sollen ernst genommen und als Feedback verwendet werden",
+        "Die Teamtreffen und TO-Treffen sollen weiterhin stattfinden"
+      ],
+      "observations": [
+        "Die Protokolle werden bereits gelesen und helfen den Prozessen nach vorne"
+      ],
+      "decisions": [
+        "Die Protokolle sollen weiterhin verwendet werden"
+      ],
+      "actions": [
+        "Die Qualitätsthemen sollen in die Protokolle aufgenommen werden"
+      ]
+    }
+  ]
+}
+```

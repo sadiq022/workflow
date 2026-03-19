@@ -1,0 +1,55 @@
+```
+{
+  "meeting_title": "Team Meeting",
+  "date": "11.04",
+  "leader": "",
+  "participants": "",
+  "goal": "",
+  "topics": [
+    {
+      "title": "Neuer Zielring",
+      "key_points": [
+        "Vertrag für neuen Zielring unterschrieben",
+        "Zielring ist 300 Millimeter kleiner als der große Zielring",
+        "Liefertermin für Wickelkern: 10. Oktober",
+        "Liefertermin für erstes Lieferbauteil: 16. Januar 2026"
+      ],
+      "observations": [
+        "Das neue Produkt ist ein elektrischer Schiffsantrieb",
+        "Das Produkt wird für die Errichtung von Offshore Windparks eingesetzt"
+      ],
+      "decisions": [
+        "Herr Rabe wird Projektleiter für das Projekt DP025"
+      ],
+      "actions": []
+    },
+    {
+      "title": "Transformation",
+      "key_points": [
+        "Ein Meilenstein in der Transformation ist erreicht",
+        "Systeme für Personalplanung und Kapazitätsplanung werden verschmolzen"
+      ],
+      "observations": [
+        "Das ermöglicht einen längerfristigen Ausblick für jeden Mitarbeiter",
+        "Das ermöglicht eine bessere Planung und Koordination"
+      ],
+      "decisions": [],
+      "actions": [
+        "Herr Schmidt wird den Prozess der Systemverschmelzung vorantreiben"
+      ]
+    },
+    {
+      "title": "Einsatz und Motivation",
+      "key_points": [
+        "Herr Daubekrieg erhält eine Premium für seinen Einsatz",
+        "Das Team zeigt Eigenverantwortung und motiviert sich selbst"
+      ],
+      "observations": [
+        "Das ist ein gutes Beispiel für die Strategie Lean Management und New Work"
+      ],
+      "decisions": [],
+      "actions": []
+    }
+  ]
+}
+```

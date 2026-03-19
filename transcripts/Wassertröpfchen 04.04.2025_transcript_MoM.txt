@@ -1,0 +1,92 @@
+# Minutes of Meeting: Wassertröpfchen Meeting
+
+## Introduction
+
+The Wassertröpfchen Meeting took place on April 4th. The meeting was attended by Herr Schmidt, Herr Bartke, Herr Schünemann, Herr Neuling, Herr Dölitz, Herr Lauschke, and Herr Bauer. The meeting covered various topics related to performance, process optimization, and future developments within the company.
+
+## 1. Wassertropf Nummer 1
+
+### Background
+The first topic discussed was regarding Wassertropf Nummer 1, focusing on a special commitment made by Herr Bartke during the Searing post-processing.
+
+### Key Points
+- Herr Schmidt suggested that Herr Bartke receive a performance bonus for his special commitment.
+- A discussion ensued about a target ring and the combination of two errors: the winding program not being released and the manufacturing protocol not being cleanly filled out.
+
+### Observations
+- The need to sharpen error awareness among team members.
+- The importance of optimizing processes to prevent similar errors.
+
+### Decisions
+- It was decided that Herr Bartke would not receive a bonus since he himself had made an error.
+
+### Actions
+- Proposals for performance bonuses should be sent to Herr Bauer or the speaker.
+
+## 2. Wassertropf Nummer zwei
+
+### Background
+The second topic concerned Wassertropf Nummer zwei, specifically addressing a problem with cleaning material in the coating process.
+
+### Key Points
+- Herr Schünemann utilized KI (Artificial Intelligence) to find a solution for the issue with the cleaning material in the coating process.
+
+### Observations
+- The potential for process optimization.
+- The importance of quality awareness.
+
+### Decisions
+- Herr Schünemann was awarded a bonus of 100 Euros.
+
+### Actions
+- Herr Neuling is tasked with properly filing the data researched by Herr Schünemann.
+
+## 3. Wassertropf Nummer drei
+
+### Key Points
+- Herr Dölitz reported having open points that needed attention.
+
+## 4. Wassertropf Nummer 4
+
+### Key Points
+- Discussions on further developments and progress.
+- Considerations for salary adjustments.
+
+### Observations
+- A staff survey had been conducted.
+
+### Decisions
+- It was decided to implement performance-dependent components.
+
+### Actions
+- Introduce measurement methods for performance-dependent components.
+- Adjust criteria for employee evaluation.
+
+## 5. Leistungsmessungen (Performance Measurements)
+
+### Key Points
+- The focus for the next few months will be on ITIS and BP.
+
+### Observations
+- The importance of capturing error costs.
+
+### Actions
+- Implement criteria for performance measurement in ITIS and BP.
+
+## Conclusion
+
+The meeting covered a range of topics from performance bonuses and process optimizations to future developments and performance measurements. Action items were assigned to various participants to follow up on the decisions made during the meeting. 
+
+## Participants:
+- Herr Schmidt
+- Herr Bartke
+- Herr Schünemann
+- Herr Neuling
+- Herr Dölitz
+- Herr Lauschke
+- Herr Bauer
+
+## Date: 
+April 4th
+
+## Prepared by: [Your Name], Meeting Secretary

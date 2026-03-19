@@ -1,0 +1,104 @@
+Here is the extracted meeting information in valid JSON:
+
+```json
+{
+  "meeting_title": "",
+  "date": "",
+  "leader": "",
+  "participants": "",
+  "goal": "",
+  "topics": [
+    {
+      "title": "Wassertropfen Nummer eins",
+      "key_points": [],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Wassertropfen Nummer zwei",
+      "key_points": [
+        "Frau Jörgertschesko hat den Bereich Einkauf eine ganz harte Nuss geknackt",
+        "Lieferanten für das Material zum Pettpressen in den USA gefunden",
+        "Kostenreduzierung von 8000 auf 4000"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Wassertropfen Nummer drei",
+      "key_points": [
+        "Umzug von neuen Digitalisierungs-Bero",
+        "TU Arbeitsplatz wird eingerichtet",
+        "Verfügbarkeit für TUs und Kolleginnen und Kollegen in der Produktion"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer eins",
+      "key_points": [
+        "Frau Yoda Cesco ist in der KW4042 für die kommenden 3KWs im Urlaub",
+        "Herr Merz wird den Bereich Einkauf übernehmen als Urlaubsvertretung",
+        "Einhaltung des Einkaufs-SZM-Prozesses"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer zwei",
+      "key_points": [
+        "Veränderungen sind positiv für die Zukunft",
+        "Diskussion mit Professoren der Universität in Augsburg über Veränderungsprozesse"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer drei",
+      "key_points": [
+        "Keine Fehler toleranz im Regelprozessen",
+        "Daten müssen sauber sein",
+        "Wettbewerbsvorteil durch hohe Wertschöpfungstiefe"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer vier",
+      "key_points": [
+        "Linemanagement heißt auch Selbst- und Fremdorganisation",
+        "Eigenverantwortung und Eigenorganisation sind wichtig"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer fünf",
+      "key_points": [
+        "Verantwortung für FES-Bereiche muss klar sein",
+        "5S-Verantwortungsbereich festgelegt"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer sechs",
+      "key_points": [
+        "Besuch von T.O. Dresden und Universität Bialystok",
+        "Themen: Innovation und Zukunft"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    }
+  ]
+}
+```

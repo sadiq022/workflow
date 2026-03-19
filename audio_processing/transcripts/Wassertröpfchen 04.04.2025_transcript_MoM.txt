@@ -1,0 +1,43 @@
+## Meeting Details
+- Title: 
+- Date: 
+- Participants: 
+- Goal: 
+
+## Discussion Topics
+1. **Wassertropf Nummer eins**
+   - Herr Schmidt hat vorgeschlagen, dass Herr Bartke eine Leistungsprämie erhält.
+   - Fehler bei der Fertigung wurden diskutiert.
+   - Wichtigkeit von sauberer Dokumentation und Fehlerbewusstsein.
+   - Beobachtung: Fehler bei der Fertigung können durch saubere Dokumentation und Fehlerbewusstsein vermieden werden.
+
+2. **Wassertopf Nummer zwei**
+   - Herr Schülmande hat eine Lösung für das Problem mit dem Reinigungsmaterial im Coating-Prozess vorgeschlagen.
+   - KI-Anwendung zur Lösung des Problems.
+   - Beobachtung: Die Anwendung von KI kann zur Lösung von Problemen beitragen.
+
+3. **Wassertropf Nummer vier**
+   - Gehaltsanpassung und Leistungsabhängige Komponenten.
+   - Durchschnittliche Höhe für Leistungsabhängige Komponenten: 18%.
+   - Beobachtung: Die Einführung von Leistungsabhängigen Komponenten kann die Leistung der Mitarbeiter verbessern.
+
+4. **Leistungsmessungen**
+   - Einführung von Messmethoden für die Leistungsmessung.
+   - Verwendung der Value Creator App.
+   - Beobachtung: Die Einführung von Messmethoden kann die Leistung der Mitarbeiter verbessern.
+
+## Decisions
+| Entscheidung | Beschreibung |
+| --- | --- |
+| Herr Bartke erhält eine Leistungsprämie | Leistungsprämie für Herrn Bartke |
+| Weiterverfolgung der Lösung durch Herrn Schülmande | Lösung für das Problem mit dem Reinigungsmaterial |
+| Weiterentwicklung der Leistungsabhängigen Komponenten | Einführung von Leistungsabhängigen Komponenten |
+| Weiterentwicklung der Messmethoden | Einführung von Messmethoden für die Leistungsmessung |
+
+## Action Items
+| Aktion | Verantwortlicher | Beschreibung |
+| --- | --- | --- |
+| Weiteres Vorschlagen von Leistungsprämien | Team | Vorschlagen von Leistungsprämien durch das Team |
+| Überprüfung der Lösung und mögliche Implementierung |  | Überprüfung der Lösung und mögliche Implementierung |
+| Umsetzung der Leistungsabhängigen Komponenten |  | Umsetzung der Leistungsabhängigen Komponenten in den nächsten Monaten |
+| Umsetzung der Messmethoden |  | Umsetzung der Messmethoden in den nächsten Monaten |

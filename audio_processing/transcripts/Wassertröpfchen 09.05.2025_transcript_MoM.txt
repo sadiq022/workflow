@@ -1,0 +1,43 @@
+## Meeting Details
+- Title: BP-Monatsreport-Treffen
+- Date: 
+- Participants: 
+- Goal: Zielrichtung ist heute, dass wir definitiv nur die fünf Minuten brauchen und nicht mehr als Zielrichtung. Wassertröpfchen für diese Woche.
+
+## Discussion Topics
+1. **Bereich BP-Projekte**
+   - Der Bereich BP-Projekte soll weiterentwickelt werden.
+   - Es gibt bereits einen guten Standard für Regelprozesse im Bereich Cap.
+   - Die Kommunikation und Fertigungsplanung laufen sehr gut.
+   - Die Kundenzufriedenheit ist hoch.
+   - Der Fokus wird auf der Interaktion mit den BP-Projektvorgängen liegen.
+   - Die Vernetzung zwischen den BP-Prozessen und den CAP-Prozessen soll weiterentwickelt werden.
+
+2. **Effizienzsteigerung**
+   - Die Effizienzsteigerung soll weiter vorangetrieben werden.
+   - Das Team soll die Top 3 Qualitätsthemen und den Top 4 Schulungsthemen weiterentwickeln.
+   - Die Formate, die verwendet werden, sollen identisch sein.
+   - Die mittelfristige Forecastplanung soll vereinheitlicht werden.
+   - Die Protokolle sollen gelesen und als Feedback verwendet werden.
+
+3. **Protokolle und Teamtreffen**
+   - Die Protokolle sollen ernst genommen und als Feedback verwendet werden.
+   - Die Teamtreffen und TO-Treffen sollen weiterhin stattfinden.
+   - Die Protokolle werden bereits gelesen und helfen den Prozessen nach vorne.
+   - Die Protokolle sollen weiterhin verwendet werden.
+   - Die Qualitätsthemen sollen in die Protokolle aufgenommen werden.
+
+## Decisions
+| Entscheidung | Beschreibung |
+| --- | --- |
+| Fokus auf BP-Projektvorgänge | Der Fokus wird auf der Interaktion mit den BP-Projektvorgängen liegen |
+| Vereinheitlichung der mittelfristigen Forecastplanung | Die mittelfristige Forecastplanung soll vereinheitlicht werden |
+| Weiterverwendung von Protokollen | Die Protokolle sollen weiterhin verwendet werden |
+
+## Action Items
+| Action | Owner | Beschreibung |
+| --- | --- | --- |
+| Vernetzung zwischen BP- und CAP-Prozessen |  | Die Vernetzung zwischen den BP-Prozessen und den CAP-Prozessen soll weiterentwickelt werden |
+| Weiterentwicklung von Top 3 Qualitätsthemen und Top 4 Schulungsthemen |  | Das Team soll die Top 3 Qualitätsthemen und den Top 4 Schulungsthemen weiterentwickeln |
+| Lesen und Verwenden von Protokollen als Feedback |  | Die Protokolle sollen gelesen und als Feedback verwendet werden |
+| Aufnahme von Qualitätsthemen in Protokolle |  | Die Qualitätsthemen sollen in die Protokolle aufgenommen werden |

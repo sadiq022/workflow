@@ -1,0 +1,51 @@
+## Meeting Details
+- Title: Wassertröpfchen Treffen
+- Date: 6.6.25
+- Leader: 
+- Participants: 
+- Goal: Effizienzsteigerung und Transformation
+
+## Discussion Topics
+
+1. **Einführung und Zielrichtung**
+   - Die Unternehmensziele aus Anlage 8 wurden diskutiert.
+   - Das Treffen wurde als Transformationstreffen für Effizienzsteigerung eingestuft.
+   - Die Zielrichtung ist, 25 Prozent überdurchschnittlich zu Dresden Eheilstrukturen zu zahlen.
+
+2. **Prozessoptimierung**
+   - Die Notwendigkeit der Verschlankung von Kie-Account-Treffen wurde hervorgehoben.
+   - Es wurde die Vereinfachung von Protokollen aus Team-Treffen angesprochen.
+   - Effizienzsteigerung durch organisatorische Änderungen wurde als Ziel genannt.
+   - Beobachtungen:
+     - Bisherige Prozesse sind nicht effizient genug.
+     - Es gibt Potential für Verbesserungen.
+
+3. **Value-Catcher-App**
+   - Der aktuelle Umsetzungstaat der Value-Catcher-App wurde als nicht zufriedenstellend bewertet.
+   - Es wurde auf viele kleine Einzelfälle aus Buchungsvorgängen hingewiesen.
+   - Ziel ist die Verbesserung der Fehlerquote.
+   - Beobachtungen:
+     - Bisherige Umsetzung ist nicht fair.
+     - KPI-Formulierung ist noch nicht abgeschlossen.
+   - Actions:
+     - Umsetzung von KPI's für messbaren Fortschritt.
+
+4. **Themen für das Wassertröpfchen Treffen**
+   - Effizienzsteigerungen.
+   - Transformation.
+   - Linemanagement.
+   - Newwork und Digitalisierung.
+
+## Decisions
+
+| Decision | Description | Responsible |
+|----------|-------------|-------------|
+| -        | -           | -           |
+
+## Action Items
+
+| Action | Owner | Description |
+|--------|-------|-------------|
+| Umsetzung von KPI's für messbaren Fortschritt | - | Verbesserung der Fehlerquote der Value-Catcher-App |
+
+Bitte beachten Sie, dass einige Details wie Verantwortlichkeiten für Aktionen und Entscheidungen nicht explizit im bereitgestellten JSON-Datenmaterial enthalten waren. Daher bleiben diese Felder in den Meeting Minutes offen.

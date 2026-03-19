@@ -1,0 +1,154 @@
+# Minutes of Meeting: Wassertropfen-Treffen
+## Date: 19. September
+
+### Introduction
+The Wassertropfen-Treffen meeting was held on 19. September. The meeting covered various topics related to operational improvements, information updates, and strategic discussions.
+
+### Participants
+| Name | Role |
+|------|------|
+| -    | -    |
+
+### Meeting Topics
+
+## 1. Wassertropf Nummer 1 - Automatische Datenerfassung
+### Discussion
+The meeting discussed the implementation of automatic data capture for Wassertropf Nummer 1. Key points included:
+- Integration of FP605 and LP120 in the automatic data capture system.
+- Automatic error messages via Telegram.
+- Making data directly available in the intranet.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 2. Wassertropf Nummer 2 - Anpassung von Parametern
+### Discussion
+The meeting addressed the adjustment of parameters for the FP605 tool. Key points included:
+- Reduction of alarm signals.
+- Improvement of the error rate.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 3. Information Nummer 1 - Auszahlung Gesundheitsprämie
+### Discussion
+The meeting provided information on the payout of health premiums. Key points included:
+- The payout will occur in October.
+- The payout will be based on a combination of sales in August and September.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 4. Information Nummer 2 - Verhandlungen mit Deal
+### Discussion
+The meeting discussed new negotiations with Deal. Key points included:
+- Cost pressure.
+- Location differences.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 5. Information Nummer 3 - Effizienzsteigerung und Optimierung
+### Discussion
+The meeting addressed efficiency increases and optimizations. Key points included:
+- Voluntary Saturday work will only be considered if it offers economic benefits.
+- Introduction of automated protocol management using a Chat-GPT system.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 6. Information Nummer 4 - Protokollführung
+### Discussion
+The meeting discussed protocol management. Key points included:
+- Automated protocols.
+- Meeting efficiency.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 7. Veränderung und Innovation
+### Discussion
+The meeting emphasized the importance of change and innovation. Key points included:
+- Change is viewed positively.
+- Innovation is necessary for progress.
+- Key areas: digitization, lean management, and new work concepts.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+## 8. Mitarbeiterbewertung
+### Discussion
+The meeting discussed new criteria for employee evaluations. Key points included:
+- Focus on target setting for change processes.
+
+### Decisions
+| Decision | Description |
+|----------|-------------|
+| -        | -           |
+
+### Action Items
+| Action | Owner | Status |
+|--------|-------|--------|
+| -      | -     | -      |
+
+### Conclusion
+The meeting covered a range of topics aimed at improving operations, communication, and strategic planning within the organization. Action items and decisions were noted for future follow-up.
+
+### Next Steps
+- Review and implement discussed changes and improvements.
+- Monitor progress on action items.
+
+### Documents and Materials
+- Meeting transcript and JSON data.
+
+Prepared by: [Your Name]  
+Date: 19. September

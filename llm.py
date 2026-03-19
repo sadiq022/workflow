@@ -5,7 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 _client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-
+# model = "llama-3.3-70b-versatile"
+model = "meta-llama/llama-4-scout-17b-16e-instruct"
 
 # SYSTEM_PROMPT = """You are a question-answering assistant.
 
@@ -190,13 +191,13 @@ Answer:
 """
 
     return _client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct",
+        model=model,
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompt},
         ],
         temperature=0.1,
-        max_completion_tokens=1500,
+        max_completion_tokens=700,
     ).choices[0].message.content.strip()
 
 
@@ -220,7 +221,7 @@ Question:
 """
 
     resp = _client.chat.completions.create(
-        model="meta-llama/llama-4-scout-17b-16e-instruct",
+        model=model,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.3,
         max_completion_tokens=256,

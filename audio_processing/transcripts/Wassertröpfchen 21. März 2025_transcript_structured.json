@@ -1,0 +1,88 @@
+```json
+{
+  "meeting_title": "Wassertröpfchen Meeting",
+  "date": "",
+  "leader": "",
+  "participants": "",
+  "goal": "Besprechung der Mitarbeiterumfrage und Diskussion der Ergebnisse",
+  "topics": [
+    {
+      "title": "Mitarbeiterumfrage",
+      "key_points": [
+        "Die Umfrage ist abgeschlossen und die Ergebnisse sind sehr positiv",
+        "Die Zustimmungsrate ist sehr hoch, mit nur zwei Ausnahmen",
+        "Die Mitarbeiter befürworten die Einführung eines neuen Systems"
+      ],
+      "observations": [
+        "Die Mitarbeiter sind zufrieden mit dem aktuellen System, aber sehen Potential für Verbesserung",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen"
+      ],
+      "decisions": [
+        "Die Ergebnisse der Umfrage werden an alle Mitarbeiter verteilt",
+        "Es wird eine weitere Diskussion und Anpassung des Systems geben"
+      ],
+      "actions": [
+        "Die Ergebnisse der Umfrage werden analysiert und ausgewertet",
+        "Es wird ein Plan erstellt, um die Anpassungen umzusetzen"
+      ]
+    },
+    {
+      "title": "Leistungsgerechtigkeit und Transparenz",
+      "key_points": [
+        "Die Mitarbeiter befürworten die Einführung eines leistungsgerechten Systems",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen, um ein faires System zu finden"
+      ],
+      "observations": [
+        "Die Mitarbeiter sehen die Notwendigkeit für ein transparentes und leistungsgerechtes System",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Qualität und Leistung zu messen"
+      ],
+      "decisions": [
+        "Es wird ein Plan erstellt, um ein leistungsgerechtes System zu entwickeln",
+        "Die Mitarbeiter werden in die Diskussion und Anpassung des Systems einbezogen"
+      ],
+      "actions": [
+        "Die Ergebnisse der Umfrage werden analysiert und ausgewertet",
+        "Es wird ein Plan erstellt, um die Anpassungen umzusetzen"
+      ]
+    },
+    {
+      "title": "Arbeitszeiten und Gesundheitsprämie",
+      "key_points": [
+        "Die Mitarbeiter befürworten die Einführung einer Gesundheitsprämie",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Arbeitszeiten und Gesundheitsprämie zu regeln"
+      ],
+      "observations": [
+        "Die Mitarbeiter sehen die Notwendigkeit für eine Gesundheitsprämie",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Arbeitszeiten zu regeln"
+      ],
+      "decisions": [
+        "Es wird ein Plan erstellt, um die Gesundheitsprämie umzusetzen",
+        "Die Mitarbeiter werden in die Diskussion und Anpassung der Arbeitszeiten einbezogen"
+      ],
+      "actions": [
+        "Die Ergebnisse der Umfrage werden analysiert und ausgewertet",
+        "Es wird ein Plan erstellt, um die Anpassungen umzusetzen"
+      ]
+    },
+    {
+      "title": "Teamtreffen und Kommunikation",
+      "key_points": [
+        "Die Mitarbeiter befürworten die Einführung von Teamtreffen",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Kommunikation zu verbessern"
+      ],
+      "observations": [
+        "Die Mitarbeiter sehen die Notwendigkeit für regelmäßige Teamtreffen",
+        "Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Kommunikation zu verbessern"
+      ],
+      "decisions": [
+        "Es wird ein Plan erstellt, um die Teamtreffen umzusetzen",
+        "Die Mitarbeiter werden in die Diskussion und Anpassung der Kommunikation einbezogen"
+      ],
+      "actions": [
+        "Die Ergebnisse der Umfrage werden analysiert und ausgewertet",
+        "Es wird ein Plan erstellt, um die Anpassungen umzusetzen"
+      ]
+    }
+  ]
+}
+```

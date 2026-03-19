@@ -1,0 +1,51 @@
+## Meeting Details
+- Title: Wassertröpfchen Meeting
+- Date: 
+- Participants: 
+- Goal: Besprechung der Mitarbeiterumfrage und Diskussion der Ergebnisse
+
+## Discussion Topics
+1. **Mitarbeiterumfrage**
+   - Die Umfrage ist abgeschlossen und die Ergebnisse sind sehr positiv.
+   - Die Zustimmungsrate ist sehr hoch, mit nur zwei Ausnahmen.
+   - Die Mitarbeiter befürworten die Einführung eines neuen Systems.
+   - Die Mitarbeiter sind zufrieden mit dem aktuellen System, aber sehen Potential für Verbesserung.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen.
+
+2. **Leistungsgerechtigkeit und Transparenz**
+   - Die Mitarbeiter befürworten die Einführung eines leistungsgerechten Systems.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen, um ein faires System zu finden.
+   - Die Mitarbeiter sehen die Notwendigkeit für ein transparentes und leistungsgerechtes System.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Qualität und Leistung zu messen.
+
+3. **Arbeitszeiten und Gesundheitsprämie**
+   - Die Mitarbeiter befürworten die Einführung einer Gesundheitsprämie.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Arbeitszeiten und Gesundheitsprämie zu regeln.
+   - Die Mitarbeiter sehen die Notwendigkeit für eine Gesundheitsprämie.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Arbeitszeiten zu regeln.
+
+4. **Teamtreffen und Kommunikation**
+   - Die Mitarbeiter befürworten die Einführung von Teamtreffen.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Kommunikation zu verbessern.
+   - Die Mitarbeiter sehen die Notwendigkeit für regelmäßige Teamtreffen.
+   - Es gibt Bedarf für weitere Diskussionen und Anpassungen, um die Kommunikation zu verbessern.
+
+## Decisions
+| Entscheidung | Beschreibung |
+| --- | --- |
+| Ergebnisse der Umfrage verteilen | Die Ergebnisse der Umfrage werden an alle Mitarbeiter verteilt |
+| Weitere Diskussion und Anpassung des Systems | Es wird eine weitere Diskussion und Anpassung des Systems geben |
+| Plan für leistungsgerechtes System | Es wird ein Plan erstellt, um ein leistungsgerechtes System zu entwickeln |
+| Mitarbeiter einbeziehen | Die Mitarbeiter werden in die Diskussion und Anpassung des Systems einbezogen |
+| Plan für Gesundheitsprämie | Es wird ein Plan erstellt, um die Gesundheitsprämie umzusetzen |
+| Plan für Teamtreffen | Es wird ein Plan erstellt, um die Teamtreffen umzusetzen |
+
+## Action Items
+| Aktion | Besitzer | Beschreibung |
+| --- | --- | --- |
+| Analyse der Umfrageergebnisse |  | Die Ergebnisse der Umfrage werden analysiert und ausgewertet |
+| Plan für Anpassungen erstellen |  | Es wird ein Plan erstellt, um die Anpassungen umzusetzen |
+| Ergebnisse der Umfrage verteilen |  | Die Ergebnisse der Umfrage werden an alle Mitarbeiter verteilt |
+| Plan für leistungsgerechtes System erstellen |  | Es wird ein Plan erstellt, um ein leistungsgerechtes System zu entwickeln |
+| Plan für Gesundheitsprämie erstellen |  | Es wird ein Plan erstellt, um die Gesundheitsprämie umzusetzen |
+| Plan für Teamtreffen erstellen |  | Es wird ein Plan erstellt, um die Teamtreffen umzusetzen |

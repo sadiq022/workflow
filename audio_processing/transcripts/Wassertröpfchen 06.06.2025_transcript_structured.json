@@ -1,0 +1,66 @@
+Here is the extracted structured meeting information in valid JSON:
+
+```json
+{
+  "meeting_title": "Wassertröpfchen Treffen",
+  "date": "6.6.25",
+  "leader": "",
+  "participants": "",
+  "goal": "Effizienzsteigerung und Transformation",
+  "topics": [
+    {
+      "title": "Einführung und Zielrichtung",
+      "key_points": [
+        "Unternehmensziele aus Anlage 8",
+        "Transformationstreffen für Effizienzsteigerung",
+        "Zielrichtung: 25 Prozent überdurchschnittlich zu Dresden Eheilstrukturen zahlen"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Prozessoptimierung",
+      "key_points": [
+        "Verschlankung von Kie-Account-Treffen",
+        "Vereinfachung von Protokollen aus Team-Treffen",
+        "Effizienzsteigerung durch organisatorische Änderungen"
+      ],
+      "observations": [
+        "Bisherige Prozesse sind nicht effizient genug",
+        "Es gibt Potential für Verbesserungen"
+      ],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Value-Catcher-App",
+      "key_points": [
+        "Umsetzungstaat ist nicht zufriedenstellend",
+        "Viele kleine Einzelfäler aus Buchungsvorgängen",
+        "Ziel: Verbesserung der Fehlerquote"
+      ],
+      "observations": [
+        "Bisherige Umsetzung ist nicht fair",
+        "KPI-Formulierung noch nicht abgeschlossen"
+      ],
+      "decisions": [],
+      "actions": [
+        "Umsetzung von KPI's für messbaren Fortschritt"
+      ]
+    },
+    {
+      "title": "Themen für das Wassertröpfchen Treffen",
+      "key_points": [
+        "Effizienzsteigerungen",
+        "Transformation",
+        "Linemanagement",
+        "Newwork und Digitalisierung"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    }
+  ]
+}
+```

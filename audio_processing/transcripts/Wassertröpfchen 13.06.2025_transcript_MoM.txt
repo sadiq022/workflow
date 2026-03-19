@@ -1,0 +1,45 @@
+## Meeting Details
+- Title: Wassertropfchen Treffen
+- Date: 13.6.
+- Participants: Not specified
+- Goal: Not specified
+- Leader: Not specified
+
+## Discussion Topics
+
+1. **Betriebswirtschaftliche Daten und Controlling**
+   - BA-Report wurde von Herrn Merz erstellt.
+   - Die Qualität des Reports ist hervorragend.
+   - Es wurde die Umsetzung von Kennzahlen und Liebenmanagement diskutiert.
+   - Beobachtungen:
+     - Umsatzabweichung von 320.000 Euro hinter dem Plan.
+     - Hauptabweichungen bei HP 013, LP-1-2-0 und Zielringen.
+
+2. **Budget- und Budget-Verantwortungen**
+   - Einführung von Ampelsystem und Budget-Überschreitungen wurde diskutiert.
+   - Es gab eine Budget-Überschreitung von 41.000 Euro im April.
+   - Optimierung auf 25.000 Euro im Mai.
+   - Beobachtungen:
+     - Budget-Überschreitungen und deren Optimierung.
+
+3. **Syringe und angefertigte Bauteile**
+   - Es fand eine Diskussion über Syringe und angefertigte Bauteile statt.
+   - Erweiterung der angefertigten Bauteile um 98.000 Euro.
+   - Beobachtungen:
+     - Ursachen für die Erweiterung der angefertigten Bauteile.
+
+4. **Durchlaufzeiten und Ampelbild**
+   - Darstellung von Durchlaufzeiten und Ampelbild.
+   - Möglichkeit, gezielt an Baustellen zu arbeiten.
+   - Beobachtungen:
+     - Status quo der Durchlaufzeiten und Ampelbild.
+
+## Decisions
+| Decision | Description | 
+|----------|-------------|
+| None     | No decisions were made during the meeting. |
+
+## Action Items
+| Action | Owner | Description |
+|--------|-------|-------------|
+| None   | None  | No action items were assigned during the meeting. |

@@ -1,0 +1,97 @@
+Here is the extracted meeting information in valid JSON:
+
+```json
+{
+  "meeting_title": "Wassertropfen-Treffen",
+  "date": "19. September",
+  "leader": "",
+  "participants": "",
+  "goal": "",
+  "topics": [
+    {
+      "title": "Wassertropf Nummer 1 - Automatische Datenerfassung",
+      "key_points": [
+        "FP605 und LP120 in der automatischen Datenerfassung",
+        "Automatische Fehlermeldungen über Telegram",
+        "Daten im Intranet direkt verfügbar"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Wassertropf Nummer 2 - Anpassung von Parametern",
+      "key_points": [
+        "Anpassung von Parametern für FP605-Werkzeug",
+        "Reduktion von Alarmsignalen",
+        "Verbesserung der Fehlerrate"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer 1 - Auszahlung Gesundheitsprämie",
+      "key_points": [
+        "Auszahlung im Oktober",
+        "Kombination aus Umsatz im August und September"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer 2 - Verhandlungen mit Deal",
+      "key_points": [
+        "Neue Verhandlungen mit Deal",
+        "Kostendruck",
+        "Standortunterschiede"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer 3 - Effizienzsteigerung und Optimierung",
+      "key_points": [
+        "Freiwillige Samstagsarbeit nur bei betriebswirtschaftlichen Vorteilen",
+        "Protokollführung mit automatischem Chat-GPT-System"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Information Nummer 4 - Protokollführung",
+      "key_points": [
+        "Automatische Protokolle",
+        "Effizienz des Meetings"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Veränderung und Innovation",
+      "key_points": [
+        "Veränderung ist positiv",
+        "Innovation ist notwendig",
+        "Digitalisierung, Lean, New Work"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Mitarbeiterbewertung",
+      "key_points": [
+        "Neue Kriterien für Mitarbeiterbewertung",
+        "Zielfokussierung auf Veränderungsprozesse"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    }
+  ]
+}
+```

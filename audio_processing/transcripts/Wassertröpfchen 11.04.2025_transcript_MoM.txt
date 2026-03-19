@@ -1,0 +1,41 @@
+## Meeting Details
+- Title: Team Meeting
+- Date: 11.04
+- Participants: Not specified
+- Goal: Not specified
+
+## Discussion Topics
+1. **Neuer Zielring**
+   - Key points discussed include:
+     * The contract for the new target ring has been signed.
+     * The new target ring is 300 millimeters smaller than the large target ring.
+     * The delivery date for the winding core is October 10th.
+     * The delivery date for the first delivery part is January 16, 2026.
+   - Observations made during the discussion:
+     * The new product is an electric ship propulsion system.
+     * The product is used for the construction of offshore wind farms.
+2. **Transformation**
+   - Key points discussed include:
+     * A milestone in the transformation has been achieved.
+     * Systems for personnel planning and capacity planning are being merged.
+   - Observations made during the discussion:
+     * This allows for a longer-term outlook for each employee.
+     * It enables better planning and coordination.
+3. **Einsatz und Motivation**
+   - Key points discussed include:
+     * Mr. Daubekrieg will receive a premium for his commitment.
+     * The team shows self-responsibility and motivates itself.
+   - Observations made during the discussion:
+     * This is a good example of the Lean Management and New Work strategy.
+
+## Decisions
+| Decision |
+| --- |
+| Herr Rabe will be the project manager for project DP025 |
+
+## Action Items
+| Action | Owner | Description |
+| --- | --- | --- |
+| Advance the process of system merging | Herr Schmidt |  |
+
+Note: The leader and participants of the meeting, as well as the goal, were not specified in the provided data.

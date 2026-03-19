@@ -1,0 +1,85 @@
+Here is the extracted structured meeting information in valid JSON:
+
+```json
+{
+  "meeting_title": "Wassertröpfchen Meeting",
+  "date": "4. April",
+  "leader": "",
+  "participants": ["Herr Schmidt", "Herr Bartke", "Herr Schünemann", "Herr Neuling", "Herr Dölitz", "Herr Lauschke", "Herr Bauer"],
+  "goal": "",
+  "topics": [
+    {
+      "title": "Wassertropf Nummer 1",
+      "key_points": [
+        "Herr Schmidt regte an, dass Herr Bartke eine Leistungsprämie bekommt für einen besonderen Einsatz im Rahmen Searing-Nachbereitung",
+        "Diskussion über den Zielring und die Kombination aus zwei Fehlern (Wickelprogramm nicht freigegeben und Fertigungsprotokoll nicht sauber ausgefüllt)"
+      ],
+      "observations": [
+        "Fehlerbewusstsein schärfen",
+        "Optimierung von Prozessen"
+      ],
+      "decisions": [
+        "Kein Bonus für Herrn Bartke, da er selber einen Fehler gemacht hatte"
+      ],
+      "actions": [
+        "Vorschläge für Leistungsprämien an Herrn Bauer oder den Sprecher senden"
+      ]
+    },
+    {
+      "title": "Wassertropf Nummer zwei",
+      "key_points": [
+        "Herr Schünemann hat die KI angeschmissen, um eine Lösung für das Problem mit dem Reinigungsmaterial im Coating-Prozess zu finden"
+      ],
+      "observations": [
+        "Optimierung von Prozessen",
+        "Qualitätsbewusstsein"
+      ],
+      "decisions": [
+        "Herr Schünemann bekommt einen Bonus von 100 Euro"
+      ],
+      "actions": [
+        "Herr Neuling soll die Daten, die Herr Schünemann recherchiert hat, sauber ablegen"
+      ]
+    },
+    {
+      "title": "Wassertropf Nummer drei",
+      "key_points": [
+        "Herr Dölitz hat noch offene Punkte"
+      ],
+      "observations": [],
+      "decisions": [],
+      "actions": []
+    },
+    {
+      "title": "Wassertropf Nummer 4",
+      "key_points": [
+        "Weitere Entwicklungen und Fortschritte",
+        "Gehaltsanpassungen"
+      ],
+      "observations": [
+        "Mitarbeiterumfrage durchgeführt"
+      ],
+      "decisions": [
+        "leistungsabhängige Komponenten ausreichen"
+      ],
+      "actions": [
+        "Messmethoden für leistungsabhängige Komponenten einführen",
+        "Kriterien für Mitarbeiterbewertung anpassen"
+      ]
+    },
+    {
+      "title": "Leistungsmessungen",
+      "key_points": [
+        "Schwerpunkt in den nächsten Monaten: ITIS und BP"
+      ],
+      "observations": [
+        "Fehlerkosten erfassen"
+      ],
+      "decisions": [],
+      "actions": [
+        "Kriterium für Leistungsmessung in ITIS und BP implementieren"
+      ]
+    }
+  ]
+}
+```
